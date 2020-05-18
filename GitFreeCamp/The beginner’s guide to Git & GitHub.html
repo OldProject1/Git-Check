@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>The beginner’s guide to Git &amp; GitHub</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./The beginner’s guide to Git &amp; GitHub_files/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="./The beginner’s guide to Git &amp; GitHub_files/prism-unescaped-markup.css">
+
+    <link href="./The beginner’s guide to Git &amp; GitHub_files/css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./The beginner’s guide to Git &amp; GitHub_files/screen.css">
+    <link rel="stylesheet" type="text/css" href="./The beginner’s guide to Git &amp; GitHub_files/algolia-search.css">
+
+    <script type="text/javascript" async="" src="./The beginner’s guide to Git &amp; GitHub_files/analytics.js.download"></script><script async="" src="./The beginner’s guide to Git &amp; GitHub_files/gtm.js.download"></script><script src="./The beginner’s guide to Git &amp; GitHub_files/algoliasearch.min.js.download"></script>
+    <script src="./The beginner’s guide to Git &amp; GitHub_files/autocomplete.min.js.download"></script>
+
+    <script src="./The beginner’s guide to Git &amp; GitHub_files/saved_resource"></script>
+
+    <link rel="shortcut icon" href="https://www.freecodecamp.org/news/favicon.png" type="image/png">
+    <link rel="canonical" href="https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/amp/">
+    
+    <meta property="og:site_name" content="freeCodeCamp.org">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The beginner’s guide to Git &amp; GitHub">
+    <meta property="og:description" content="What is Git?
+Git is a free, open-source version control software. It was created by Linus
+Torvalds in 2005. This tool is a version control system that was initially
+developed to work with several developers on the Linux kernel.
+
+This basically means that Git is a content tracker. So Git can be used to store
+content — and it is mostly used to store code because of the other features it
+provides.
+
+Real life projects generally have multiple developers working in parallel. So
+they need a version con">
+    <meta property="og:url" content="https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/">
+    <meta property="og:image" content="https://www.freecodecamp.org/news/content/images/2019/11/cover-pic.jpeg">
+    <meta property="article:published_time" content="2019-11-06T17:02:56.000Z">
+    <meta property="article:modified_time" content="2019-11-07T16:57:43.000Z">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Github">
+    <meta property="article:tag" content="Version Control">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/freecodecamp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The beginner’s guide to Git &amp; GitHub">
+    <meta name="twitter:description" content="What is Git?
+Git is a free, open-source version control software. It was created by Linus
+Torvalds in 2005. This tool is a version control system that was initially
+developed to work with several developers on the Linux kernel.
+
+This basically means that Git is a content tracker. So Git can be used to store
+content — and it is mostly used to store code because of the other features it
+provides.
+
+Real life projects generally have multiple developers working in parallel. So
+they need a version con">
+    <meta name="twitter:url" content="https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/">
+    <meta name="twitter:image" content="https://www.freecodecamp.org/news/content/images/2019/11/cover-pic.jpeg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Thanoshan MV">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Git, Github, Version Control">
+    <meta name="twitter:site" content="@freecodecamp">
+    <meta name="twitter:creator" content="@ThanoshanMV">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "freeCodeCamp.org",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.freecodecamp.org/news/content/images/2019/11/fcc_primary_large_24X210.svg",
+            "width": 210,
+            "height": 24
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Thanoshan MV",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.freecodecamp.org/news/content/images/2019/11/download.png",
+            "width": 690,
+            "height": 690
+        },
+        "url": "https://www.freecodecamp.org/news/author/thanoshan/",
+        "sameAs": [
+            "https://medium.com/@mvthanoshan9",
+            "https://twitter.com/ThanoshanMV"
+        ]
+    },
+    "headline": "The beginner’s guide to Git &amp; GitHub",
+    "url": "https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/",
+    "datePublished": "2019-11-06T17:02:56.000Z",
+    "dateModified": "2019-11-07T16:57:43.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.freecodecamp.org/news/content/images/2019/11/cover-pic.jpeg",
+        "width": 1200,
+        "height": 600
+    },
+    "keywords": "Git, Github, Version Control",
+    "description": "What is Git?\nGit is a free, open-source version control software. It was created by Linus\nTorvalds in 2005. This tool is a version control system that was initially\ndeveloped to work with several developers on the Linux kernel.\n\nThis basically means that Git is a content tracker. So Git can be used to store\ncontent — and it is mostly used to store code because of the other features it\nprovides.\n\nReal life projects generally have multiple developers working in parallel. So\nthey need a version con",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.freecodecamp.org/news/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.37">
+    <link rel="alternate" type="application/rss+xml" title="freeCodeCamp.org" href="https://www.freecodecamp.org/news/rss/">
+    <script>
+  // Set up dataLayer with data if provided
+  window.dataLayer = window.dataLayer || [{ gaPropertyId: 'UA-55446531-20' }];
+
+  // Initialized GTM via gtag
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-55446531-20');
+
+  // Configure and initialize GTM
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+'&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', 'GTM-5D6RKKP');
+</script>
+
+<script>
+// For Runkit embeds
+document.addEventListener('DOMContentLoaded', function() {
+  (function() {
+    const runkitElements = document.querySelectorAll('.runkit-element');
+	  runkitElements.forEach(function(element) {
+      const source = element.innerHTML.replace(/&amp;/g, '&');
+      element.innerHTML = '';
+      RunKit.createNotebook({element, source});
+	  });
+  })();
+});
+</script>
+
+<style id="fit-vids-style">.fluid-width-video-container{flex-grow: 1;width:100%;}.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body class="post-template tag-git tag-github tag-version-control">
+
+    <div class="site-wrapper">
+        <nav class="site-nav nav-padding">
+    <div class="site-nav-left">
+        <form id="search-form" onsubmit="submitSearch()">
+  <div role="search" class="searchbox__wrapper">
+    <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" placeholder="Search 6,000+ tutorials" id="search-input" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span>
+    <button type="submit" title="Submit your search query." class="ais-SearchBox-submit">
+      <svg class="ais-SearchBox-submitIcon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 40 40">
+        <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"></path>
+      </svg>
+    </button>
+  </div>
+</form>
+
+<script>
+  const client = algoliasearch('QMJYL5WYTI', '4318af87aa3ce128708f1153556c6108');
+  const index = client.initIndex('news');
+  const screenWidth = window.screen.width;
+  const screenHeight = window.screen.height;
+  const hitsToRender = (screenWidth >= 767 && screenHeight >= 768) ? 8 : 5;
+  autocomplete('#search-input', { 
+      hint: false,
+      keyboardShortcuts: ['s', 191]
+    }, [
+    {
+      source: autocomplete.sources.hits(index, { hitsPerPage: hitsToRender }),
+      debounce: 250,
+      templates: {
+        suggestion: (suggestion, result) => {
+          hits = true;
+          return `
+            <a href="${suggestion.url}">
+              <div class="algolia-result">
+                <span>${suggestion._highlightResult.title.value}</span>
+              </div>
+            </a>
+          `;
+        },
+        empty: (options) => {
+          hits = false;
+          return `
+            <div class="aa-suggestion footer-suggestion no-hits-footer">
+              <div class="algolia-result">
+                <span>
+                  No tutorials found
+                </span>
+              </div>
+            </div>
+          `;
+        },
+        footer: (query, result) => {
+          if (!query.isEmpty) {
+            return `
+              <div class="aa-suggestion footer-suggestion">
+                <a id="algolia-footer-selector" href="https://www.freecodecamp.org/news/search?query=${result.query}">
+                  <div class="algolia-result algolia-footer">
+                    <span>See all results for ${result.query}</span>
+                  </div>
+                </a>
+              </div>
+            `;
+          }
+        }
+      }
+    }
+  ]).on('autocomplete:closed', () => {
+    // Clicked off dropdown or pressed Esc key
+    hits = false;
+  }).on('autocomplete:selected', (event, suggestion, dataset, context) => {
+    // Set to hit URL if hit is selected by mouse click or enter key
+    hitSelected = suggestion.url;
+    // Do nothing on click, as the browser will already do it
+    if (context.selectionMethod === 'click') {
+      return;
+    }
+    // Change the page, for example, on other events
+    window.location.assign(suggestion.url);
+  });
+
+  /* 
+    If no hits in the Autocomplete dropdown are highlighted,
+    treat input like normal search bar
+  */
+  const searchForm = document.getElementById('search-form');
+  const input = document.getElementById('search-input');
+  let searchQuery, hitSelected, hits;
+
+  input.addEventListener('keyup', e => {
+    searchQuery = input.value;
+  });
+
+  /*
+    Prevent form from being submitted when magnifying
+    glass is clicked or enter pressed with no query
+    or hits
+  */
+  searchForm.addEventListener('submit', e => {
+    e.preventDefault();
+  });
+
+  /*
+    Search for highlighted hit or search query
+    when search button or enter is pressed
+  */
+  function submitSearch() {
+    hitSelected = document.getElementsByClassName('aa-cursor')[0];
+
+    if (hitSelected && searchQuery) {
+      const articleUrl = hitSelected.querySelector('a').href;
+      window.location.assign(articleUrl);
+    } else if (!hitSelected && searchQuery && hits) {
+      window.location.assign(`https://www.freecodecamp.org/news/search?query=${searchQuery}`);
+    }
+  }
+</script>
+    </div>
+    <div class="site-nav-middle">
+        <a class="site-nav-logo" href="https://www.freecodecamp.org/news"><img src="./The beginner’s guide to Git &amp; GitHub_files/fcc_primary_large_24X210.svg" alt="freeCodeCamp.org"></a>
+    </div>
+    <div class="site-nav-right">
+        <a class="toggle-button-nav" href="https://www.freecodecamp.org/donate/">
+            Donate
+        </a>
+    </div>
+
+</nav>
+        <div class="under-header-content jumbotron">
+    <h2 class="donation-banner">
+        Stay safe, friends. Learn to code from home. <a href="https://www.freecodecamp.org/">Use our free 2,000 hour
+            curriculum.</a>
+    </h2>
+</div>
+        <div id="error-message"></div>
+
+        
+
+
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-git tag-github tag-version-control ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="2019-11-06">6 November 2019</time>
+                    <span class="date-divider">/</span>
+                    <a href="https://www.freecodecamp.org/news/tag/git/">
+                        #Git
+                    </a>
+                </section>
+                <h1 class="post-full-title">The beginner’s guide to Git &amp; GitHub</h1>
+            </header>
+
+            <div class="post-full-author-header">
+
+
+                
+<section class="author-card">
+    <img class="author-profile-image" src="./The beginner’s guide to Git &amp; GitHub_files/download.png" alt="Thanoshan MV">
+    <section class="author-card-content">
+        <h4 class="author-card-name"><a href="https://www.freecodecamp.org/news/author/thanoshan/">Thanoshan MV</a></h4>
+        <p>I'm an undergraduate in Information Systems. I love coding and writing. 
+Cheers! </p>
+    </section>
+</section>
+
+
+            </div>
+
+            <figure class="post-full-image">
+                <img srcset="/news/content/images/size/w300/2019/11/cover-pic.jpeg 300w,
+                            /news/content/images/size/w600/2019/11/cover-pic.jpeg 600w,
+                            /news/content/images/size/w1000/2019/11/cover-pic.jpeg 1000w,
+                            /news/content/images/size/w2000/2019/11/cover-pic.jpeg 2000w" sizes="(max-width: 800px) 400px,
+                            (max-width: 1170px) 700px,
+                            1400px" src="./The beginner’s guide to Git &amp; GitHub_files/cover-pic.jpeg" alt="The beginner’s guide to Git &amp; GitHub" onerror="this.style.display=&#39;none&#39;">
+            </figure>
+
+            <section class=" post-full-content">
+                <div class="post-content">
+                    <h1 id="what-is-git"><strong>What is Git?</strong></h1><p>Git is a free, open-source <strong>version control software</strong>. It was created by Linus Torvalds in 2005. This tool is a version control system that was initially developed to work with several developers on the Linux kernel.</p><p>This basically means that Git is a content tracker. So Git can be used to store content — and it is mostly used to store code because of the other features it provides.</p><p>Real life projects generally have multiple developers working in parallel. So they need a version control system like Git to make sure that there are no code conflicts between them.</p><p>Also, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of their code.</p><p>The branch system in Git allows developers to work individually on a task (For example: One branch -&gt; One task OR One branch -&gt; One developer). Basically think of Git as a small software application that controls your code base, if you’re a developer.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="./The beginner’s guide to Git &amp; GitHub_files/vcs.png" class="kg-image"><figcaption>Shows how Git works</figcaption></figure><!--kg-card-end: image--><h1 id="git-repositories"><strong>Git Repositories</strong></h1><p>If we want to start using Git, we need to know where to host our repositories. </p><p>A repository (or “Repo” for short) is a project that contains multiple files. In our case a repository will contain code-based files. </p><p>There are two ways you can host your repositories. One is online (on the cloud) and the second is offline (self-installed on your server). </p><p>There are three popular Git hosting services: GitHub (owned by Microsoft), GitLab (owned by GitLab) and BitBucket. We’ll use GitHub as our hosting service.</p><h1 id="before-using-git-we-should-know-why-we-need-it"><strong>Before using Git we should know why we need it</strong></h1><h3 id="git-makes-it-easy-to-contribute-to-open-source-projects">Git makes it easy to contribute to open source projects</h3><p>Nearly every open-source project uses GitHub to manage their projects. Using GitHub is free if your project is open source, and it includes a wiki and issue tracker that makes it easy to include more in-depth documentation and get feedback about your project. </p><p>If you want to contribute, you just fork (get a copy of) a project, make your changes, and then send the project a pull request using GitHub's web interface. This pull request is your way of telling the project you're ready for them to review your changes.</p><h3 id="documentation">Documentation</h3><p>By using GitHub, you make it easier to get excellent documentation. Their help section and guides have articles for nearly any topic related to Git that you can think of.</p><h3 id="integration-options">Integration options</h3><p>GitHub can integrate with common platforms such as Amazon and Google Cloud, with services such as Code Climate to track your feedback, and can highlight syntax in over 200 different programming languages.</p><h3 id="track-changes-in-your-code-across-versions">Track changes in your code across versions</h3><p>When multiple people collaborate on a project, it’s hard to keep track of revisions — who changed what, when, and where those files are stored. </p><p>GitHub takes care of this problem by keeping track of all the changes that have been pushed to the repository. </p><p>Much like using Microsoft Word or Google Drive, you can have a version history of your code so that previous versions are not lost with every iteration. It’s easy to come back to the previous version and contribute your work.</p><h3 id="showcase-your-work">Showcase your work</h3><p>Are you a developer who wishes to attract recruiters? GitHub is the best tool you can rely on for this. </p><p>Today, when searching for new recruits for their projects, most companies look at GitHub profiles. If your profile is available, you will have a higher chance of being recruited even if you are not from a great university or college.</p><h1 id="now-we-ll-learn-how-to-use-git-github"><strong>Now we’ll learn how to use Git &amp; GitHub</strong></h1><h3 id="github-account-creation">GitHub account creation</h3><p>To create your account, you need to go to <a href="https://github.com/" rel="noopener">GitHub</a>'s website and fill out the registration form.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="./The beginner’s guide to Git &amp; GitHub_files/github-webpage.png" class="kg-image"><figcaption>GitHub official web page</figcaption></figure><!--kg-card-end: image--><h3 id="git-installation">Git installation</h3><p>Now we need to install Git's tools on our computer. We’ll use CLI to communicate with GitHub.</p><p>For Ubuntu:</p><ol><li>First, update your packages.</li></ol><!--kg-card-begin: code--><pre><code>sudo apt update</code></pre><!--kg-card-end: code--><p>2. Next, install Git and GitHub with apt-get</p><!--kg-card-begin: code--><pre><code>sudo apt-get install git</code></pre><!--kg-card-end: code--><p>3. Finally, verify that Git is installed correctly</p><!--kg-card-begin: code--><pre><code>git --version</code></pre><!--kg-card-end: code--><p>4. Run the following commands with your information to set a default username and email when you’re going to save your work.</p><!--kg-card-begin: code--><pre><code>git config --global user.name "MV Thanoshan"
+git config --global user.email "example@mail.com"</code></pre><!--kg-card-end: code--><h1 id="working-with-github-projects"><strong>Working with GitHub projects</strong></h1><p>We’ll work with GitHub projects in two ways.</p><h3 id="type-1-create-the-repository-clone-it-to-your-pc-and-work-on-it-recommended-">Type 1: Create the repository, clone it to your PC, and work on it.(Recommended)</h3><p>Type 1 involves creating a totally fresh repository on GitHub, cloning it to our computer, working on our project, and pushing it back.</p><p>Create a new repository by clicking the “new repository” button on the GitHub web page.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/new-repo.png" class="kg-image"></figure><!--kg-card-end: image--><p>Pick a name for your first repository, add a small description, check the ‘Initialize this repository with a README’ box, and click on the “Create repository” button.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/readme.png" class="kg-image"></figure><!--kg-card-end: image--><p>Well done! Your first GitHub repository is created.</p><p>Your first mission is to get a copy of the repository on your computer. To do that, you need to “clone” the repository on your computer. </p><p>To clone a repository means that you're taking a repository that’s on the server and cloning it to your computer – just like downloading it. On the repository page, you need to get the “HTTPS” address.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/github-project.png" class="kg-image"></figure><!--kg-card-end: image--><p>Once you have the address of the repository, you need to use your terminal. Use the following command on your terminal. When you’re ready you can enter this:</p><!--kg-card-begin: code--><pre><code>git clone [HTTPS ADDRESS]</code></pre><!--kg-card-end: code--><p>This command will make a local copy of the repository hosted at the given address.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="./The beginner’s guide to Git &amp; GitHub_files/cmd-1.png" class="kg-image"><figcaption>Output message of “git clone” command</figcaption></figure><!--kg-card-end: image--><p>Now, your repository is on your computer. You need to move in it with the following command.</p><!--kg-card-begin: code--><pre><code>cd [NAME OF REPOSITORY]</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/cmd-2.png" class="kg-image"></figure><!--kg-card-end: image--><p>As you can see in the above picture, my repository name is “My-GitHub-Project” and this command made me go to that specific directory.</p><p><strong>NOTE:</strong><em><em> </em></em>When you clone, Git will create a repository on your computer. If you want, you can access your project with the computer user interface instead using the above ‘cd’ command on the terminal.</p><p>Now, in that folder we can create files, work on them, and save them locally. To save them in a remote place — like GitHub – we have do a process called a “commit”. To do this, get back to your terminal. If you closed it, like I previously stated, use the ‘cd’ command.</p><!--kg-card-begin: code--><pre><code>cd [NAME OF REPOSITORY]</code></pre><!--kg-card-end: code--><p>Now, in the terminal, you’re in your repository directory. There are 4 steps in a commit: ‘status’ , ‘add’ , ‘commit’ and ‘push’. All the following steps must be performed within your project. Let's go through them one by one.</p><ol><li>“status”: The first thing you need to do is to check the files you have modified. To do this, you can type the following command to make a list of changes appear.</li></ol><!--kg-card-begin: code--><pre><code>git status</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/git-status-1.png" class="kg-image"></figure><!--kg-card-end: image--><p>2. “add”: With the help of the change list, you can add all files you want to upload with the following command,</p><!--kg-card-begin: code--><pre><code>git add [FILENAME] [FILENAME] [...]</code></pre><!--kg-card-end: code--><p>In our case, we’ll add a simple HTML file.</p><!--kg-card-begin: code--><pre><code>git add sample.html</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/sample.png" class="kg-image"></figure><!--kg-card-end: image--><p>3. “commit”: Now that we have added the files of our choice, we need to write a message to explain what we have done. This message may be useful later if we want to check the change history. Here is an example of what we can put in our case.</p><!--kg-card-begin: code--><pre><code>git commit -m "Added sample HTML file that contain basic syntax"</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/commit-1.png" class="kg-image"></figure><!--kg-card-end: image--><p>4. “push”: Now we can put our work on GitHub. To do that we have to ‘push’ our files to Remote. Remote is a duplicate instance of our repository that lives somewhere else on a remote server. To do this, we must know the remote’s name (Mostly remote is named origin). To figure out that name, type the following command.</p><!--kg-card-begin: code--><pre><code>git remote</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/remote-1.png" class="kg-image"></figure><!--kg-card-end: image--><p>As you can see in the above image, it says that our remote’s name is origin. Now we can safely ‘push’ our work by the following command.</p><!--kg-card-begin: code--><pre><code>git push origin master</code></pre><!--kg-card-end: code--><p>Now, if we go to our repository on the GitHub web page, we can see the sample.html file that we’ve pushed to remote — GitHub!</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/push-1.png" class="kg-image"></figure><!--kg-card-end: image--><p><strong>NOTE</strong>: Sometimes when you’re using Git commands in the terminal, it can lead you to the VIM text editor (a CLI based text-editor). So to get rid of it, you have to type</p><!--kg-card-begin: code--><pre><code>:q</code></pre><!--kg-card-end: code--><p>and ENTER.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/-q.png" class="kg-image"></figure><!--kg-card-end: image--><!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="./The beginner’s guide to Git &amp; GitHub_files/explanation.png" class="kg-image"><figcaption>Describes how pull &amp; push work</figcaption></figure><!--kg-card-end: image--><p>Pulling is the act of receiving from GitHub.</p><p>Pushing is the act of sending to GitHub.</p><h3 id="type-2-work-on-your-project-locally-then-create-the-repository-on-github-and-push-it-to-remote-">Type 2: Work on your project locally then create the repository on GitHub and push it to remote.</h3><p>Type 2 lets you make a fresh repository from an existing folder on our computer and send that to GitHub. In a lot of cases you might have actually already made something on your computer that you want to suddenly turn into a repository on GitHub.</p><p>I will explain this to you with a Survey form web project that I made earlier that wasn’t added to GitHub.</p><p>As I already mentioned, when executing any Git commands, we have to make sure that we are in the correct directory in the terminal.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/type-2.png" class="kg-image"></figure><!--kg-card-end: image--><p>By default, any directory on our computer is not a Git repository – but we can turn it into a Git repository by executing the following command in the terminal.</p><!--kg-card-begin: code--><pre><code>git init</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/init.png" class="kg-image"></figure><!--kg-card-end: image--><p>After converting our directory to a Git repository, the first thing we need to do is to check the files we have by using the following command.</p><!--kg-card-begin: code--><pre><code>git status</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/status-2.png" class="kg-image"></figure><!--kg-card-end: image--><p>So there are two files in that directory that we need to “add” to our Repo.</p><!--kg-card-begin: code--><pre><code>git add [FILENAME] [FILENAME] [...]</code></pre><!--kg-card-end: code--><p><strong>NOTE</strong>: To “add” all of the files in our Repository we can use the following command:</p><!--kg-card-begin: code--><pre><code>git add .</code></pre><!--kg-card-end: code--><p>After the staging area (the add process) is complete, we can check whether the files are successfully added or not by executing the <code>git status</code></p><p>If those particular files are in green like the below picture, you’ve done your work!</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/green.png" class="kg-image"></figure><!--kg-card-end: image--><p>Then we have to “commit” with a description in it.</p><!--kg-card-begin: code--><pre><code>git commit -m "Adding web Survey form"</code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/survey-form.png" class="kg-image"></figure><!--kg-card-end: image--><p>If my repository started on GitHub and I brought it down to my computer, a remote is already going to be attached to it (Type 1). But if I’m starting my repository on my computer, it doesn’t have a remote associated with it, so I need to add that remote (Type 2).</p><p>So to add that remote, we have to go to GitHub first. Create a new repository and name it whatever you want to store it in GitHub. Then click the “Create repository” button.</p><p><strong>NOTE</strong>: In Type 2, Please don’t initialize the repository with a README file when creating a new repository on the GitHub web page.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/new-repo-2.png" class="kg-image"></figure><!--kg-card-end: image--><p>After clicking the “Create repository” button you’ll find the below image as a web page.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/web-page.png" class="kg-image"></figure><!--kg-card-end: image--><p>Copy the HTTPS address. Now we’ll create the remote for our repository.</p><!--kg-card-begin: code--><pre><code>git remote add origin [HTTPS ADDRESS]</code></pre><!--kg-card-end: code--><p>After executing this command, we can check whether we have successfully added the remote or not by the following command</p><!--kg-card-begin: code--><pre><code>git remote</code></pre><!--kg-card-end: code--><p>And if it outputs “origin” you’ve added the remote to your project.</p><p><strong>NOTE</strong>: Just remember we can state any name for the remote by changing the name “origin”. For example:</p><!--kg-card-begin: code--><pre><code>git remote add [REMOTE NAME] [HTTPS ADDRESS]</code></pre><!--kg-card-end: code--><p>Now, we can push our project to GitHub without any problems!</p><!--kg-card-begin: code--><pre><code>git push origin master</code></pre><!--kg-card-end: code--><p>After completing these steps one by one, if you go to GitHub you can find your repository with the files!</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./The beginner’s guide to Git &amp; GitHub_files/final.png" class="kg-image"></figure><!--kg-card-end: image--><h1 id="conclusion"><strong>Conclusion</strong></h1><p>Thank you everyone for reading. I just explained the basics of Git and GitHub. I strongly encourage you all to read more related articles on Git and GitHub. I hope this article helped you.</p><p><a href="https://medium.com/@mvthanoshan9/ubuntu-a-beginners-guide-to-git-github-44a2d2fda0b8">Check out</a> my original article in Medium.</p><p>Thank you.</p><p><strong><strong>Happy Coding!</strong></strong></p>
+                </div>
+                <hr>
+                <p class="social-row">
+
+    If you read this far, tweet to the author to show them you care.
+    <a class="cta-button" onclick="window.open(`https://twitter.com/intent/tweet?text=Thank%20you%20@ThanoshanMV%20for%20writing%20this%20helpful%20article%2e%0A%0AThe%20beginner%E2%80%99s%20guide%20to%20Git%20%26%20GitHub%0A%0Ahttps%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fthe-beginners-guide-to-git-github%2F`, &#39;share-twitter&#39;, &#39;width=550, height=235&#39;); return false;">Tweet
+        a thanks</a>
+</p>                
+<div class="learn-cta-row">
+    <p>
+        Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as
+        developers. <a class="cta-button" href="https://www.freecodecamp.org/learn">Get started</a>
+    </p>
+</div>            </section>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+
+
+        <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-desc-col">
+                <p>freeCodeCamp is a donor-supported tax-exempt 501(c)(3) nonprofit organization (United States Federal
+                    Tax Identification Number: 82-0779546)
+                </p>
+                <p>
+                    Our mission: to help people learn to code for free. We accomplish this by creating thousands of
+                    videos, articles, and interactive coding lessons - all freely available to the public. We also have
+                    thousands of freeCodeCamp study groups around the world.
+                </p>
+                <p>
+                    Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services,
+                    and staff.
+                </p>
+                <p class="footer-donation">
+                    You can&nbsp;<a href="https://freecodecamp.org/donate" class="inline" rel="noopener noreferrer" target="_blank">make a tax-deductible donation here</a>.
+                </p>
+            </div>
+            <div class="trending-guides">
+                <div class="col-header">Trending Guides</div>
+                <div class="trending-guides-row">
+                    <div class="footer-col footer-col-1">
+                        <a href="https://www.freecodecamp.org/news/common-sql-interview-questions/">SQL Interview
+                            Questions</a>
+                        <a href="https://www.freecodecamp.org/news/what-is-statistical-significance-p-value-defined-and-how-to-calculate-it/">Statistical
+                            Significance</a>
+                        <a href="https://www.freecodecamp.org/news/basic-sql-commands/">SQL Queries</a>
+                        <a href="https://www.freecodecamp.org/news/what-is-blockchain-and-how-does-it-work/">What is
+                            Blockchain?</a>
+
+                        <a href="https://www.freecodecamp.org/news/how-to-become-a-full-stack-web-developer-in-2020/">Full
+                            Stack Developer</a>
+                        <a href="https://www.freecodecamp.org/news/javascript-substring-examples-slice-substr-and-substring-methods-in-js/">JavaScript
+                            Substring</a>
+                        <a href="https://www.freecodecamp.org/news/what-does-a-vpn-do-and-how-does-it-work-a-guide-to-virtual-private-networks/">What
+                            Does a VPN Do?</a>
+                        <a href="https://www.freecodecamp.org/news/docker-image-guide-how-to-remove-and-delete-docker-images-stop-containers-and-remove-all-volumes/">Docker
+                            Remove Image</a>
+                        <a href="https://www.freecodecamp.org/news/tar-in-linux-example-tar-gz-tar-file-and-tar-directory-and-tar-compress-commands/">Tar
+                            GZ</a>
+                        <a href="https://www.freecodecamp.org/news/what-is-a-csv-file-and-how-to-open-the-csv-file-format/">What
+                            is a CSV File?</a>
+                    </div>
+                    <div class="footer-col footer-col-2">
+
+                        <a href="https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/">CSS
+                            Flexbox</a>
+
+                        <a href="https://www.freecodecamp.org/news/basic-linux-commands-bash-tips-you-should-know/">Linux
+                            Commands</a>
+                        <a href="https://www.freecodecamp.org/news/javascript-map-reduce-and-filter-explained-with-examples/">JavaScript
+                            Map</a>
+                        <a href="https://www.freecodecamp.org/news/what-is-https-a-guide-to-secure-web-browsing-and-browser-encryption/">What
+                            is HTTPS?</a>
+
+                        <a href="https://www.freecodecamp.org/news/python-list-append-vs-python-list-extend/">Python
+                            List Append</a>
+                        <a href="https://www.freecodecamp.org/news/what-is-chromium-how-the-chromium-web-browser-is-different-from-chrome/">What
+                            is Chromium?</a>
+                        <a href="https://www.freecodecamp.org/news/smoke-testing/">Smoke Testing</a>
+
+                        <a href="https://www.freecodecamp.org/news/clear-history-how-to-delete-your-browsing-history-in-chrome-firefox-and-safari/">Clear
+                            History</a>
+                        <a href="https://www.freecodecamp.org/news/private-browser-how-to-use-incognito-mode-in-chrome-and-safari/">Incognito
+                            Mode</a>
+                        <a href="https://www.freecodecamp.org/news/linux-how-to-add-users-and-create-users-with-useradd/">Linux
+                            Add User</a>
+                    </div>
+                    <div class="footer-col footer-col-3">
+                        <div class="footer-left">
+                            <a href="https://www.freecodecamp.org/news/why-correlation-does-not-imply-causation-the-meaning-of-this-common-saying-in-statistics/">Correlation
+                                VS Causation</a>
+                            <a href="https://www.freecodecamp.org/news/permutation-vs-combination-what-is-the-difference-between-the-permutation-formula-and-the-combination-formula/">Permutation
+                                VS Combination</a>
+
+                            <a href="https://www.freecodecamp.org/news/what-is-computer-programming-defining-software-development/">Computer
+                                Programming</a>
+
+                            <a href="https://www.freecodecamp.org/news/what-are-json-web-tokens-jwt-auth-tutorial/">JWT</a>
+                            <a href="https://www.freecodecamp.org/news/find-square-root-of-number-calculate-by-hand/">How
+                                to
+                                Find a Square Root</a>
+                        </div>
+
+                        <div class="footer-right">
+                            <a href="https://www.freecodecamp.org/news/md5-vs-sha-1-vs-sha-2-which-is-the-most-secure-encryption-hash-and-how-to-check-them/">MD5
+                                Hash</a>
+                            <a href="https://www.freecodecamp.org/news/what-is-cached-data/">What is Cached Data?</a>
+                            <a href="https://www.freecodecamp.org/news/how-to-complete-the-square-a-method-for-completing-the-square/">Completing
+                                the Square</a>
+                            <a href="https://www.freecodecamp.org/news/http-error-403-forbidden-what-it-means-and-how-to-fix-it/">Error
+                                403 Forbidden</a>
+                            <a href="https://www.freecodecamp.org/news/inline-css-guide-how-to-style-an-html-tag-directly/">CSS
+                                Inline Style</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-buttom">
+            <div class="col-header">Our Nonprofit</div>
+            <div class="footer-divder"></div>
+            <div class="our-nonprofit">
+                <a href="https://www.freecodecamp.org/news/about/">About</a>
+                <a href="https://www.linkedin.com/school/free-code-camp/people/" rel="noopener noreferrer" target="_blank">Alumni Network</a>
+                <a href="https://github.com/freeCodeCamp/">Open Source</a>
+                <a href="https://www.freecodecamp.org/shop/" rel="noopener noreferrer" target="_blank">Shop</a>
+                <a href="https://www.freecodecamp.org/news/support/">Support</a>
+                <a href="https://www.freecodecamp.org/news/sponsors/">Sponsors</a>
+                <a href="https://www.freecodecamp.org/news/academic-honesty-policy/">Academic Honesty</a>
+                <a href="https://www.freecodecamp.org/news/code-of-conduct/">Code of Conduct</a>
+                <a href="https://www.freecodecamp.org/news/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.freecodecamp.org/news/terms-of-service/">Terms of Service</a>
+                <a href="https://www.freecodecamp.org/news/copyright-policy/">Copyright Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+
+    <div style="width: 0px; height: 0px; position: fixed; left: 0px; top: 0px; overflow: hidden;"><iframe frameborder="0" src="./The beginner’s guide to Git &amp; GitHub_files/application-sha256-5b1a6933db91dffd7dfc8e82dceed26d7025f24becd6b6bfd0fdbf39405c0e59.html" name="runkit-application" style="padding: 0px; margin: 0px; border: 0px; height: 100vh; width: 0px; background: transparent;"></iframe></div><script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+
+    <script src="./The beginner’s guide to Git &amp; GitHub_files/jquery-3.2.1.min.js.download" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/jquery.fitvids.js.download"></script>
+
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-unescaped-markup.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-markup-templating.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-bash.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-c.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-clojure.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-cpp.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-csharp.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-css.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-docker.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-elixir.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-erlang.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-git.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-go.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-graphql.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-haskell.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-java.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-javascript.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-json.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-jsx.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-kotlin.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-lua.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-markup.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-php.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-python.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-r.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-ruby.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-rust.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-scala.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-sql.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-swift.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-typescript.min.js.download"></script>
+    <script type="text/javascript" src="./The beginner’s guide to Git &amp; GitHub_files/prism-yaml.min.js.download"></script>
+
+    <script>
+    $(document).ready(function () {
+        // Start fitVids
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // End fitVids
+    });
+</script>
+
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6RKKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+</body></html>
